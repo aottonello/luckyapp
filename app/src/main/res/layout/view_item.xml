@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/child_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/image_item_height"
+    android:layout_marginTop="@dimen/spacing_6"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="@dimen/image_item_width"
+        android:layout_height="@dimen/image_item_height"
+        android:background="@color/background_image"
+        android:contentDescription="@null"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="@dimen/spacing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_place_holder_outline" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_blocked_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageViewIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/txt_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textAllCaps="true"
+            android:textAppearance="@style/caption_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Max Burgers" />
+
+        <ImageView
+            android:id="@+id/image_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:layout_marginEnd="@dimen/spacing_2"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_heart_filled"
+            app:layout_constraintEnd_toStartOf="@+id/txt_favorite_count"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_favorite_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/caption_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1.5X" />
+
+        <TextView
+            android:id="@+id/txt_detail"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_2"
+            android:gravity="top"
+            android:maxLines="2"
+            android:textAppearance="@style/caption_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_brand"
+            tools:text="3,5% Cashbacks Paying with lucky" />
+
+        <TextView
+            android:id="@+id/txt_tags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/spacing_1"
+            android:gravity="top"
+            android:textAppearance="@style/caption_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_detail"
+            tools:text="Cashback" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

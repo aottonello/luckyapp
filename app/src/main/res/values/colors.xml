@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F7F9FA</color>
+    <color name="colorPrimaryDark">#F7F9FA</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorPink">#E880FC</color>
+    <color name="colorBlue">#64FFDA</color>
+    <color name="colorLightBlue">#BBDEFB</color>
+    <color name="colorYellow">#FFC400</color>
+    <color name="colorLightBrown">#A1887F</color>
+
+    <!-- Lucky Colors-->
+    <color name="background_views"> #FEFEFE</color>
+    <color name="white_alpha">#BBFFFFFF</color>
+    <color name="gray_scale">#222D34</color>
+    <color name="gray_scale_light">#718897</color>
+    <color name="gray_light">#9DB0BD</color>
+    <color name="background_image">#EBF1F4</color>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/child_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_detail_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgFirst"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_detail_height"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="center"
+                tools:src="@drawable/ic_place_holder_outline" />
+
+            <ImageView
+                android:id="@+id/imgSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_like"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_blocked_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_4"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:layout_marginEnd="@dimen/spacing_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame">
+
+            <TextView
+                android:id="@+id/txt_brand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textAllCaps="true"
+                android:textAppearance="@style/caption_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Max Burgers" />
+
+            <ImageView
+                android:id="@+id/image_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing_2"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_heart_filled"
+                app:layout_constraintEnd_toStartOf="@+id/txt_favorite_count"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_favorite_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/caption_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="1.5X" />
+
+            <TextView
+                android:id="@+id/txt_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_1"
+                android:maxLines="2"
+                android:textAppearance="@style/caption_label"
+                android:textSize="@dimen/caption_detail_label_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_brand"
+                tools:text="3,5% Cashbacks Paying with lucky" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_1"
+                android:textAppearance="@style/description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_detail"
+                tools:text="Cashback" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:textAllCaps="true"
+                android:textAppearance="@style/price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_description"
+                tools:text="Price" />
+
+            <TextView
+                android:id="@+id/txt_price_discount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_1"
+                android:textAllCaps="true"
+                android:textAppearance="@style/label_light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price"
+                tools:text="EGP500 " />
+
+            <TextView
+                android:id="@+id/txt_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_5"
+                android:layout_marginTop="@dimen/spacing_0"
+                android:textAppearance="@style/caption_label"
+                android:textSize="@dimen/caption_label_price_size"
+                app:layout_constraintStart_toEndOf="@+id/txt_price_discount"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price"
+                tools:text="EGP500 " />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_2"
+                android:textAppearance="@style/caption_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price"
+                tools:text="1.5X" />
+
+            <TextView
+                android:id="@+id/txt_redemption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginBottom="@dimen/spacing_6"
+                android:textAllCaps="true"
+                android:textAppearance="@style/redemption_label"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price_discount"
+                tools:text="REDEMPTIONS CAP: 4 TIMES" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

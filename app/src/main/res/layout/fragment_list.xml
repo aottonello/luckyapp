@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LuckyMainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/spacing_4"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_offers"
+        tools:itemCount="2"
+        tools:listitem="@layout/view_item" />
+
+    <TextView
+        android:id="@+id/txt_offers"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_12"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/spacing_4"
+        android:background="@color/background_views"
+        android:paddingStart="@dimen/spacing_4"
+        android:paddingTop="@dimen/spacing_3"
+        android:paddingBottom="@dimen/spacing_3"
+        android:textAppearance="@style/caption_gray"
+        android:textSize="@dimen/title_offer_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Max Burgers" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/gray_scale_light</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/gray_scale</item>
+        <item name="android:textSize">@dimen/caption_label_size</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Styles texts-->
+    <style name="header_section">
+        <item name="android:textColor">@color/gray_scale</item>
+        <item name="android:textSize">@dimen/title_header_size</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="caption_gray">
+        <item name="android:textColor">@color/gray_scale_light</item>
+        <item name="android:textSize">@dimen/caption_size</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="lineHeight">12dp</item>
+    </style>
+
+    <style name="caption_label">
+        <item name="android:textSize">@dimen/caption_label_size</item>
+        <item name="android:textColor">@color/gray_scale</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="price">
+        <item name="android:textSize">@dimen/caption_size</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/gray_scale</item>
+      </style>
+
+    <style name="description">
+        <item name="android:textColor">@color/gray_scale</item>
+        <item name="android:textSize">@dimen/caption_label_size</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="label_light">
+        <item name="android:textSize">@dimen/title_offer_size</item>
+        <item name="android:textColor">@color/gray_light</item>
+    </style>
+
+    <style name="redemption_label">
+        <item name="android:textSize">@dimen/caption_redemption_size</item>
+        <item name="android:textColor">@color/gray_scale</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+</resources>
